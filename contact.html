@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact — Vuka Digital</title>
+  <meta name="description" content="Get in touch with Vuka Digital. Tell us about your business and we'll recommend the right solution — no pressure, no pitch."/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">Vuka<span class="dot">.</span><span class="tag">Digital</span></a>
+    <div class="nav-links">
+      <a href="services.html">Services</a>
+      <a href="packages.html">Packages</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="btn btn-primary nav-cta">Get a Quote</a>
+    </div>
+    <button class="nav-burger" id="nav-burger" aria-label="Open menu">
+      <svg id="icon-menu" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      <svg id="icon-x" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" viewBox="0 0 24 24" style="display:none"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+  <div class="nav-mobile" id="nav-mobile">
+    <a href="services.html">Services</a>
+    <a href="packages.html">Packages</a>
+    <a href="about.html">About</a>
+    <a href="contact.html" class="btn btn-primary mob-cta">Get a Quote</a>
+  </div>
+</nav>
+
+<div class="page">
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="wrap">
+      <div class="breadcrumb reveal">
+        <a href="index.html">Home</a>
+        <span class="sep">›</span>
+        <span class="cur">Contact</span>
+      </div>
+      <span class="t-eye reveal">Get in touch</span>
+      <h1 class="t-h1 reveal">Let's build<br/>something.</h1>
+      <p class="t-body reveal">Tell us what your business needs. We'll reply within 24 hours with honest advice — even if that means pointing you somewhere else.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="sec">
+    <div class="wrap">
+      <div class="contact-layout">
+
+        <!-- FORM -->
+        <div class="contact-form-wrap reveal">
+          <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <div class="form-row">
+              <div>
+                <label for="first_name">First Name</label>
+                <input id="first_name" type="text" name="first_name" placeholder="Thabo" required/>
+              </div>
+              <div>
+                <label for="last_name">Last Name</label>
+                <input id="last_name" type="text" name="last_name" placeholder="Dlamini" required/>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input id="email" type="email" name="email" placeholder="thabo@mybusiness.co.za" required/>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone / WhatsApp (optional)</label>
+              <input id="phone" type="tel" name="phone" placeholder="072 000 0000"/>
+            </div>
+            <div class="form-group">
+              <label for="service">What are you looking for?</label>
+              <select id="service" name="service">
+                <option value="">Select a service or package...</option>
+                <optgroup label="Website Packages">
+                  <option>Vuka Basic — R750 (landing page)</option>
+                  <option>Vuka Pro — R1,650 (up to 3 pages)</option>
+                  <option>Vuka Business — R3,200 (up to 7 pages + automation)</option>
+                  <option>Vuka Enterprise — Custom quote</option>
+                </optgroup>
+                <optgroup label="Individual Services">
+                  <option>Logo Design — R400</option>
+                  <option>Brand Identity Kit — R950</option>
+                  <option>WhatsApp Automation — R800</option>
+                  <option>SEO Audit & Setup — R600</option>
+                  <option>Google Business Profile Setup — R350</option>
+                  <option>Monthly Care Plan</option>
+                </optgroup>
+                <option>I'm not sure yet — help me decide</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="business">Tell us about your business</label>
+              <textarea id="business" name="business" placeholder="What does your business do? What problem are you trying to solve? The more context you give us, the better we can help."></textarea>
+            </div>
+            <div class="form-group">
+              <label for="budget">Rough budget in mind?</label>
+              <select id="budget" name="budget">
+                <option value="">Select a range...</option>
+                <option>Under R1,000</option>
+                <option>R1,000 – R2,000</option>
+                <option>R2,000 – R5,000</option>
+                <option>R5,000 – R10,000</option>
+                <option>R10,000+</option>
+                <option>Not sure yet</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit">Send message
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </button>
+            <p class="form-msg" id="form-msg"></p>
+          </form>
+        </div>
+
+        <!-- ASIDE -->
+        <div class="contact-aside reveal">
+          <div class="aside-block">
+            <div class="aside-label">Location</div>
+            <p>Mokopane, Limpopo</p>
+            <p>South Africa</p>
+          </div>
+          <div class="aside-block">
+            <div class="aside-label">Email</div>
+            <a href="mailto:hello@vukadigital.co.za">hello@vukadigital.co.za</a>
+          </div>
+          <div class="aside-block">
+            <div class="aside-label">WhatsApp</div>
+            <a href="https://wa.me/27000000000">+27 000 000 0000</a>
+          </div>
+          <div class="aside-block">
+            <div class="aside-label">Working Hours</div>
+            <p>Monday – Friday: 8AM – 6PM</p>
+            <p>Saturday: 9AM – 2PM</p>
+          </div>
+          <div class="aside-block">
+            <div class="aside-label">Response Time</div>
+            <p>Within 24 hours on weekdays.</p>
+            <p>Usually much faster.</p>
+          </div>
+          <div class="aside-cta-box">
+            <h4>Prefer to chat directly?</h4>
+            <p>Drop us a WhatsApp and we'll get back to you quickly. Sometimes a quick back-and-forth is faster than a form.</p>
+            <a href="https://wa.me/27000000000" class="wa-link">Open WhatsApp →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo" style="display:inline-flex">Vuka<span class="dot">.</span></a>
+        <p style="margin-top:12px;">Rise. Build. Grow.<br/>Digital solutions for South African businesses, built in Limpopo.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <a href="services.html#web">Web Design</a>
+        <a href="services.html#automation">Automation</a>
+        <a href="services.html#branding">Branding</a>
+        <a href="services.html#addons">Add-ons</a>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <a href="about.html">About Us</a>
+        <a href="packages.html">Packages</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <a href="mailto:hello@vukadigital.co.za">hello@vukadigital.co.za</a>
+        <a href="https://wa.me/27000000000">WhatsApp Us</a>
+        <a href="#">Mokopane, Limpopo, SA</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2026 Vuka Digital. All rights reserved.</span>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
